@@ -1,0 +1,43 @@
+.sidebar {
+  background-color: $terciary;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  >figure {
+    background-color: $accent;
+    border-radius: 1rem;
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+
+
+    img {
+      filter: brightness(100%) invert(1);
+    }
+  }
+
+  >nav {
+    a {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: .5rem 1rem;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+      transition: all ease-in 0.25s;
+      border: 1px solid white;
+
+      &:hover {
+        // color: white;
+        // background-color: $accent;
+        border-color: $accent ;
+        color: $accent;
+      }
+    }
+  }
+
+
+}

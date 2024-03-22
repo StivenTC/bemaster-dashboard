@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LogoImage from "@/assets/logo.png"
 import CardPlan from "../../components/cardPlan/CardPlan";
+import { navList } from "@/const/NavList";
 
 export default function SideBar() {
   return (
@@ -14,14 +15,12 @@ export default function SideBar() {
       </figure>
 
       <nav>
-        <ul>
-          <li>Dashboard</li>
-          <li>Videos</li>
-          <li>Player</li>
-          <li>Analytics</li>
-          <li>Configurations</li>
-          <li>Help</li>
-        </ul>
+        {navList.map((item) =>
+          <a href={`#${item.name}`} key={item.id}>
+            {item.icon}
+            <span>{item.name}</span>
+          </a>
+        )}
       </nav>
 
       <CardPlan />

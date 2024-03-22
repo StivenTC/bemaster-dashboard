@@ -8,6 +8,7 @@
 
 body {
   color: $primary;
+  background-color: $secondary
 }
 
 button {
@@ -24,6 +25,10 @@ input[type="checkbox"] {
 
 ul {
   list-style: none;
+
+  li {
+    cursor: pointer;
+  }
 }
 
 a {
