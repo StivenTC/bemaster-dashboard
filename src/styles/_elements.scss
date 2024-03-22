@@ -1,0 +1,33 @@
+//Any generic styles for the site. Shouldn't have any classes or ids for selectors.
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $primary;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+select,
+option,
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}

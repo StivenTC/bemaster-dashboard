@@ -1,0 +1,24 @@
+* {
+  /* Include padding and border in size calculation. */
+  box-sizing: border-box;
+  /* Prevent grid and flex ítems from spill ing out of their container. */
+  min-width: 0;
+}
+
+body {
+  /* Ensure that the body fills the entire viewport. */
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* Balance headings across multiple lines into an even block. */
+  text-wrap: balance;
+}
+
+p {
+  /* Prevent text orphans (single words on last line). */
+  text-wrap: pretty;
+}
