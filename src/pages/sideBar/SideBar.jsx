@@ -17,7 +17,7 @@ export default function SideBar({ hasBack }) {
 
       <figure>
         <Image
-          alt="Trulli"
+          alt="Logo image"
           src={LogoImage}
           width={48}
           height={48} />
