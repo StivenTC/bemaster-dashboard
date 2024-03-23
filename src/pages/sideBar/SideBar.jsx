@@ -3,7 +3,8 @@ import LogoImage from "@/assets/logo.png"
 import CardPlan from "../../components/cardPlan/CardPlan";
 import { navList } from "@/const/NavList";
 
-export default function SideBar() {
+export default function SideBar({ anchor }) {
+
   return (
     <aside className="sidebar">
       <figure>
@@ -16,7 +17,7 @@ export default function SideBar() {
 
       <nav>
         {navList.map((item) =>
-          <a href={`#${item.name}`} key={item.id}>
+          <a href={`#${item.name}`} key={item.id} className={item.class}>
             {item.icon}
             <span>{item.name}</span>
           </a>

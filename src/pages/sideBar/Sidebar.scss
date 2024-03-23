@@ -30,14 +30,16 @@
       transition: all ease-in 0.25s;
       border: 1px solid white;
 
-      &:hover {
-        // color: white;
-        // background-color: $accent;
+      &:not(.selected):hover {
         border-color: $accent ;
         color: $accent;
       }
     }
+
+    .selected {
+      color: white;
+      font-weight: bolder;
+      background-color: $accent;
+    }
   }
-
-
 }

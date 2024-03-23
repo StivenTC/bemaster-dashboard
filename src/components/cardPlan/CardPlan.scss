@@ -1,0 +1,59 @@
+.card-plan {
+  min-width: 13rem;
+  background-color: $secondary;
+  padding: 1.5rem 1rem 1rem;
+  border-radius: 1rem;
+
+  >h2 {
+    font-size: smaller;
+  }
+
+  >p {
+    font-style: italic;
+    font-size: x-small;
+  }
+
+  .bars {
+    margin: 1rem 0;
+
+    .bar-item {
+      >p {
+        //font-size: smaller;
+        font-size: x-small;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-size: xx-small;
+          margin-left: auto;
+        }
+      }
+    }
+
+    .bar-graph {
+      width: auto;
+      height: .5rem;
+      border-radius: 1rem;
+      background-color: rgba($accent, 0.1);
+      position: relative;
+      overflow: hidden;
+      margin: .25rem 0 .5rem;
+
+      >div {
+        position: absolute;
+        height: .5rem;
+        border-radius: 1rem;
+        background-color: $accent;
+      }
+    }
+  }
+
+  >button {
+    background-color: $accent;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: x-small;
+  }
+}

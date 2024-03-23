@@ -1,5 +1,4 @@
 import SideBar from "@/pages/sideBar/SideBar";
-import Image from "next/image";
 
 export default function Home() {
   return (

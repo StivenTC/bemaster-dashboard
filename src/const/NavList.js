@@ -7,31 +7,37 @@ export const navList = [
   {
     id: 1,
     icon: <MdOutlineDashboard />,
-    name: 'Dashboard'
+    name: 'Dashboard',
+    class: ''
   },
   {
     id: 2,
     icon: <FaRegFolder />,
-    name: 'Videos'
+    name: 'Videos',
+    class: ''
   },
   {
     id: 3,
     icon: <MdOutlinePlayCircle />,
-    name: 'Player'
+    name: 'Player',
+    class: 'selected'
   },
   {
     id: 4,
     icon: <IoBarChartOutline />,
-    name: 'Analytics'
+    name: 'Analytics',
+    class: ''
   },
   {
     id: 5,
     icon: <PiGearDuotone />,
-    name: 'Configurations'
+    name: 'Configuraciones',
+    class: ''
   },
   {
     id: 6,
     icon: <MdHelpOutline />,
-    name: 'Help'
+    name: 'Help',
+    class: ''
   },
 ]
