@@ -1,0 +1,72 @@
+export const folderList = [
+  {
+    id: 1,
+    name: "Afiliado Master",
+    videos: "8",
+    size: "73 GB",
+    edited: "30/may/2023",
+  },
+  {
+    id: 2,
+    name: "BeMaster",
+    videos: "21",
+    size: "1.4 GB",
+    edited: "22/jun/2022",
+  },
+  {
+    id: 3,
+    name: "Comizzión",
+    videos: "10",
+    size: "284 MB",
+    edited: "11/sep/2021",
+  },
+  {
+    id: 4,
+    name: "Creador de Contenido",
+    videos: "2",
+    size: "43 GB",
+    edited: "21/jun/2023",
+  },
+  {
+    id: 5,
+    name: "Exportados Wil",
+    videos: "14",
+    size: "500 MB",
+    edited: "5/sbr/2023",
+  },
+  {
+    id: 6,
+    name: "Curso SEO",
+    videos: "12",
+    size: "450 MB",
+    edited: "10/oct/2022",
+  },
+  {
+    id: 7,
+    name: "Plantillas para Email Marketing",
+    videos: "5",
+    size: "120 MB",
+    edited: "14/mar/2023",
+  },
+  {
+    id: 8,
+    name: "Masterclass: Cómo vender online",
+    videos: "1",
+    size: "2.5 GB",
+    edited: "15/nov/2022",
+  },
+  {
+    id: 9,
+    name: "Guía completa de Google Ads",
+    videos: "8",
+    size: "300 MB",
+    edited: "2/ago/2023",
+  },
+  {
+    id: 10,
+    name: "Herramientas para Marketing Digital",
+    videos: "6",
+    size: "180 MB",
+    edited: "20/dic/2022",
+  }
+]

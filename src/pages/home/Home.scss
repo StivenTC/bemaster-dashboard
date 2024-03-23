@@ -46,5 +46,58 @@
 
   }
 
+  .list-table {
+    border-collapse: collapse;
+
+    tbody>tr {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+
+    th {
+      font-weight: bolder;
+    }
+
+    td,
+    th {
+      height: 2rem;
+      padding: 0 0.5rem;
+      vertical-align: middle;
+      font-size: smaller;
+    }
+
+    .data-cell {
+      text-align: center;
+    }
+
+    .data-name {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      >svg {
+        color: $accent;
+      }
+    }
+
+    input[type='checkbox'] {
+      accent-color: $accent;
+      appearance: none;
+      border: 1px solid $terciary;
+      background-color: white;
+      width: 9px;
+      height: 9px;
+
+      &:checked {
+        background-color: $accent;
+        outline: 2px solid white;
+        outline-offset: -3px;
+      }
+    }
+  }
 
 }

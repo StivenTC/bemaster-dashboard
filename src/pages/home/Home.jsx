@@ -3,6 +3,7 @@ import { VscLibrary } from "react-icons/vsc";
 import { BsTrash3 } from "react-icons/bs";
 import { FaRegFolder } from "react-icons/fa";
 import SearchBar from "@/components/searchBar/SearchBar";
+import { folderList } from "@/const/FolderList";
 
 export default function HomePage() {
   return (
@@ -20,24 +21,26 @@ export default function HomePage() {
 
       <SearchBar />
 
-      <table>
+      <table className="list-table">
         <thead>
           <tr>
             <th><input type='checkbox' /> </th>
-            <th>Nombre</th>
-            <th>Videos</th>
-            <th>Tamaño</th>
-            <th>Última modificación</th>
+            <th className="data-name">Nombre</th>
+            <th className="data-cell">Videos</th>
+            <th className="data-cell">Tamaño</th>
+            <th className="data-cell">Última modificación</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><input type='checkbox' /> </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          {folderList.map((folder) =>
+            <tr key={folder.id}>
+              <td className="data-cell"><input type='checkbox' /> </td>
+              <td className="data-name"><FaRegFolder /> {folder.name}</td>
+              <td className="data-cell">{folder.videos}</td>
+              <td className="data-cell">{folder.size}</td>
+              <td className="data-cell">{folder.edited}</td>
+            </tr>
+          )}
         </tbody>
       </table>
 
