@@ -49,6 +49,11 @@
   .list-table {
     border-collapse: collapse;
 
+    tr {
+      border-bottom: 1px solid $secondary;
+      transition: all ease-in 0.25s;
+    }
+
     tbody>tr {
       cursor: pointer;
 
