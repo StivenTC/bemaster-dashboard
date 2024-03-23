@@ -3,7 +3,7 @@ export default function CardPlan() {
   return (
     <section className="card-plan">
       <h2>Mi Plan - Plus</h2>
-      <p>El uso se renueva el: 3-may-23</p>
+      <p>El uso se renueva el: <time datetime="2023-05-03">3-may-23</time></p>
 
       <div className="bars">
         <div className="bar-item">
