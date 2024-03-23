@@ -6,6 +6,7 @@ import SearchBar from "@/components/searchBar/SearchBar";
 import { folderList } from "@/const/FolderList";
 
 export default function HomePage() {
+
   return (
     <main className="home">
       <header className="header">
@@ -43,8 +44,6 @@ export default function HomePage() {
           )}
         </tbody>
       </table>
-
-
     </main>
   );
 }

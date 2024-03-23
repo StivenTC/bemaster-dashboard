@@ -1,9 +1,10 @@
 import Image from "next/image";
-import LogoImage from "@/assets/logo.png"
+import LogoImage from "@/assets/logo.png";
 import CardPlan from "../../components/cardPlan/CardPlan";
 import { navList } from "@/const/NavList";
+import Link from 'next/link';
 
-export default function SideBar({ anchor }) {
+export default function SideBar() {
 
   return (
     <aside className="sidebar">
@@ -17,10 +18,10 @@ export default function SideBar({ anchor }) {
 
       <nav>
         {navList.map((item) =>
-          <a href={`#${item.name}`} key={item.id} className={item.class}>
+          <Link href={`/dashboard`} key={item.id} className={item.class}>
             {item.icon}
             <span>{item.name}</span>
-          </a>
+          </Link>
         )}
       </nav>
 
