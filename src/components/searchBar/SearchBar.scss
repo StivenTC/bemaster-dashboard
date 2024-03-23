@@ -1,0 +1,46 @@
+.search-bar {
+  display: flex;
+  border-radius: 0.25rem;
+  border: 1px solid $terciary;
+  max-width: 20rem;
+  padding: 0.25rem;
+  gap: .5rem;
+  transition: all ease 0.25s;
+
+  &:focus-within {
+    border-color: $accent;
+
+    >label {
+      color: $accent;
+      border-color: $accent;
+    }
+  }
+
+  >label {
+    color: $terciary;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $terciary;
+    transition: all ease 0.25s;
+
+    >svg {
+      transform: scale(1.5);
+    }
+  }
+
+  >input {
+    width: 100%;
+    border: none;
+    padding: 0 0.25rem;
+
+    &::placeholder {
+      color: $terciary;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { MdOutlinePlayCircle } from "react-icons/md";
 import { VscLibrary } from "react-icons/vsc";
 import { BsTrash3 } from "react-icons/bs";
 import { FaRegFolder } from "react-icons/fa";
+import SearchBar from "@/components/searchBar/SearchBar";
 
 export default function HomePage() {
   return (
@@ -15,8 +16,9 @@ export default function HomePage() {
           <button className="action-btn"><FaRegFolder /> Nueva carpeta</button>
           <button className="action-btn selected"><MdOutlinePlayCircle /> Nuevo video</button>
         </div>
-
       </header>
+
+      <SearchBar />
 
       <table>
         <thead>
