@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Dashboard() {
   return (
-    <main className="dashboard">
+    <>
       <SideBar />
 
       <main className="home">
@@ -40,6 +40,6 @@ export default function Dashboard() {
           </tbody>
         </table>
       </main>
-    </main>
+    </>
   );
 }
