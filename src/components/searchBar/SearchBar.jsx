@@ -7,7 +7,7 @@ export default function SearchBar() {
         <IoMdSearch />
       </label>
       <input
-        type="text"
+        type="search"
         id="search"
         name="search"
         placeholder="Buscar video"

@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Dashboard() {
   return (
     <>
-      <SideBar />
+      <SideBar hasBack={true} />
 
       <main className="home">
         <header className="dashboard-header">

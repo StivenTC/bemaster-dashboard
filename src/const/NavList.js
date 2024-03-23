@@ -34,10 +34,4 @@ export const navList = [
     name: 'Configuraciones',
     class: ''
   },
-  {
-    id: 6,
-    icon: <MdHelpOutline />,
-    name: 'Help',
-    class: ''
-  },
 ]
